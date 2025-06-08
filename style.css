@@ -698,3 +698,26 @@ body {
   background: rgba(190, 117, 94, 0.5); /* ベース背景色に合わせる */
   backdrop-filter: blur(5px);
 }
+@media (max-width: 768px) {
+  .hero-content {
+    flex-direction: column; /* 縦並びにする */
+    align-items: center; /* 中央揃え */
+  }
+
+  .hero-text {
+    max-width: 100%; /* 幅をフルに */
+    margin-right: 0; /* 余白をなくす */
+    text-align: center; /* テキストを中央寄せ */
+  }
+
+  .hero-logo {
+    max-width: 60%; /* 画面に収まる大きさに調整 */
+    text-align: center;
+    margin-top: 20px;
+  }
+
+  .hero-logo img {
+    max-width: 100%; /* 画像が画面幅を超えないようにする */
+    height: auto;
+  }
+}
